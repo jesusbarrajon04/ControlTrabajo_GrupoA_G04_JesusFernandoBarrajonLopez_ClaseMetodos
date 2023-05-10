@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ClaseMetodosContenedor:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ClaseMetodosContenedor_jar</output-path>
+    <root id="archive" name="ClaseMetodosContenedor.jar">
+      <element id="module-output" name="ClaseMetodosContenedor" />
+    </root>
+  </artifact>
+</component>
