@@ -55,19 +55,18 @@ public class Puerto implements Serializable {
         return "En el hub "+nHub+" hay "+resultado+" contenedores del país "+pais;
     }
 
-    public void buscarContenedor (Contenedor contenedor, int prioridad){
-        prioridad = contenedor.prioridad;
+    public void buscarContenedor (int prioridad){
         if (prioridad == 1){
             for(int i=0;i<3;i++){
-                hubs[i].mostrarDatos2(contenedor);
+                hubs[i].mostrarDatos2();
             }
         }else if (prioridad == 2){
             for(int i=0;i<3;i++){
-                hubs[i].mostrarDatos2(contenedor);
+                hubs[i].mostrarDatos2();
             }
         }else{
             for(int i=0;i<3;i++){
-                hubs[i].mostrarDatos2(contenedor);
+                hubs[i].mostrarDatos2();
             }
         }
     }

@@ -101,7 +101,7 @@ public class Hub implements Serializable {
         }
         return "0";
     }
-    public String mostrarDatos2 (Contenedor contenedor){
+    public String mostrarDatos2 (){
         String resultado = "";
             for (int c = 0; c < contenedores[10].length; c++) {
                 if(contenedores[10][c]!=null){                      // SI HAY CONTENEDOR, MUESTRO
