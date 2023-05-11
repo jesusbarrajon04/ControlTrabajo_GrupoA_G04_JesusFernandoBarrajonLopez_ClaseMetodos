@@ -1,5 +1,6 @@
 package PaqG04;
 
+import javax.swing.*;
 import java.io.Serializable;
 
 public class Puerto implements Serializable {
@@ -52,5 +53,22 @@ public class Puerto implements Serializable {
     public String calcularNumeroContenedoresDeUnPais(int nHub, String pais){
         int resultado=hubs[nHub].calcularContenedoresDeterminadoPais(pais);
         return "En el hub "+nHub+" hay "+resultado+" contenedores del país "+pais;
+    }
+
+    public void buscarContenedor (Contenedor contenedor, int prioridad){
+        prioridad = contenedor.prioridad;
+        if (prioridad == 1){
+            for(int i=0;i<3;i++){
+                hubs[i].mostrarDatos2(contenedor);
+            }
+        }else if (prioridad == 2){
+            for(int i=0;i<3;i++){
+                hubs[i].mostrarDatos2(contenedor);
+            }
+        }else{
+            for(int i=0;i<3;i++){
+                hubs[i].mostrarDatos2(contenedor);
+            }
+        }
     }
 }

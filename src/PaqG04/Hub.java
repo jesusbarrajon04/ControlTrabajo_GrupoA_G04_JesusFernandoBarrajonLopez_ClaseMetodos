@@ -101,6 +101,18 @@ public class Hub implements Serializable {
         }
         return "0";
     }
+    public String mostrarDatos2 (Contenedor contenedor){
+        String resultado = "";
+            for (int c = 0; c < contenedores[10].length; c++) {
+                if(contenedores[10][c]!=null){                      // SI HAY CONTENEDOR, MUESTRO
+                    resultado += "Id: "+contenedores[10][c].id+"\n";
+                    resultado += "Peso: "+contenedores[10][c].peso+"\n";
+                    resultado += "Control de aduanas: "+contenedores[10][c].aduanas+"\n";
+                    resultado += "Empresa que lo envía: "+contenedores[10][c].empresaEnvia+"\n";
+                }
+            }
+            return resultado;
+    }
 
     // METODO QUE CALCULA CUÁNTOS CONTENEDORES TENEMOS DE CADA PAIS (EL PAIS SE PASA POR PARÁMETROS)
     public int calcularContenedoresDeterminadoPais(String pais){

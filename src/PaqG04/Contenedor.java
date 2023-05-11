@@ -74,4 +74,8 @@ public class Contenedor implements Serializable {
     public String getEmpresaRecibe() {
         return empresaRecibe;
     }
+
+    public String toString (){
+        return "Id: " + this.id + "Empresa remitente: " + this.empresaEnvia + "Peso: " + this.peso + "Aduana: " + this.aduanas;
+    }
 }
